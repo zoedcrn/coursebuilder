@@ -11,7 +11,44 @@
 <body>
     <!-- Nav bar (anton's)-->
 
-    NAV BAR IS HERE
+    <!--navbar-->
+        <nav class="relative container mx-auto p-2">
+            <div class="flex items-center justify-between font-semibold">
+               <!--logo-->
+               <div class="pt-2">
+                <img src="images/favicon.png" alt="" class=""/>
+               </div>
+               <!--Menu items-->
+                <div class="hidden lg:flex lg:space-x-10 xl:space-x-20 ">
+                    <a href="#" class="hover:text-blue-300 text-sm ">Home</a>
+                    <a href="builder.html" class="hover:text-blue-300 text-sm ">Curriculum Planner</a> 
+                    <a href="#" class="hover:text-blue-300 text-sm ">Course Wiki</a>
+                    <a href="#" class="hover:text-blue-300 text-sm ">About Us</a>
+                    <a href="#" class="hover:text-blue-300 text-sm ">Log in</a>  
+                </div>
+                <!--Button--> 
+                <a href="#"
+             class="flex md:block p-3 px-6 pt-2 text-white bg-blue-900 rounded-full baseline hover:bg-blue-300 d"
+             >Get started</a
+             >
+                <!--Hamburger Icon-->
+                <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+                
+                <div class="lg:hidden">
+                    <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                        <a href="#" >Home</a>
+                        <a href="#" >Curriculum Planner</a> 
+                        <a href="#" >Course Wiki</a>
+                        <a href="#" >About Us</a>
+                        <a href="#" >Log in</a> 
+                     </div>
+                 </div>
+        </nav>
 
     <!-- Semester blocks -->
     <section id="semester overview">
