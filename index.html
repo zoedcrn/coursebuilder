@@ -50,6 +50,14 @@
                  </div>
         </nav>
 
+    <!--POP UP THAT WORKS -->
+    <script>
+        function alertUser(msg) {
+        alert(msg);
+        }
+     </script>
+    <body onload="alertUser('DO NOT FORGET ABOUT PRE- AND CO-REQUISITES!!!')">
+       
     <!-- Semester blocks -->
     <section id="semester overview">
         <div class="container flex object-center mx-auto space-evenly py-6">
@@ -353,13 +361,7 @@
                 class="inline-grid grid-col-1 grid-row-6 space-y-2 mx-auto text-center space-evenly place-items-center">
                 <div class="bg-stone-500 hover:bg-stone-300 rounded-full text-white px-3 py-3 md:w-40 w-auto">
                     PRA1001
-
-                    
                 </div>
-
-                
-
-
                 <div class="bg-stone-500 hover:bg-stone-300 rounded-full text-white px-3 py-3 md:w-40 w-auto">
                     PRA1001
                 </div>
@@ -379,6 +381,146 @@
         </div>
 
     </section>
+
+
+<!-- help button modal-->
+<div>
+    <button onclick="openModal()" class="bg-sky-700 text-white hover:bg-sky-500 font-bold uppercase text-sm px-3 py-3 rounded-full shadow hover:shadow-lg outline- focus:outline-none mr-1 mb-1 ease-linear
+    transition-all duration-150 flex justify-end fixed bottom-10 right-10">?</button>
+</div>
+
+<div class="main-modal fixed w-full h-300 inset-0 z-50 overflow-hidden flex justify-center items-center animated fadeIn faster"
+    style="background: rgba(0,0,0,.7);">
+
+    <div
+        class="border border-gray-500 modal-container bg-white max-w-full h-max mx-auto rounded shadow-lg z-50 overflow-y-auto">        
+        <div class="relative p-4 w-full max-w-7xl h-full md:h-auto">
+
+            <!--Title-->
+            <div class="flex justify-between items-center pb-3  p-5 border-b border-solid border-slate-200 rounded-t">
+                <p class="text-2xl font-bold text-sky-700 ">How to use?</p>
+                <div class="modal-close cursor-pointer z-50">
+                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        viewbox="0 0 18 18">
+                        <path
+                            d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <!--Body-->
+            <div class="max-h-80 max-w-max overflow-y-scroll p-4">
+                <img src= "img/img-1.png" class= "max-w-full h-auto" alt="..." />
+
+                <div class="my-4 text-slate-500 text-lg leading-relaxed">
+                <p>First select the semester and period that you would like to select courses for. </p>
+                <p> </p>
+              
+
+                <img src= "img/img-1.png" class= "max-w-full h-auto" alt="..." />
+
+                <p>Next, in the course overview area you will be able to see all the course options for that period.</p>
+                <p>----</p>
+                <p>----</p>
+                <p>----</p>
+                <p>----</p>
+                <p>----</p>
+                <p>----</p>
+                <p>----</p>
+                <p>----</p>
+
+                <img src= "img/img-1.png" class= "max-w-full h-auto" alt="..." />
+
+
+
+              </div>
+              </div>
+              
+            <!--Footer-->
+            <div class="flex items-center justify-end p-3 border-t border-solid border-slate-200 rounded-b">
+            <div class="flex justify-end pt-2">
+                <button
+                    class="focus:outline-none modal-close px-3 bg-sky-700 p-3 ml-3 rounded-lg text-white hover:bg-sky-500">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const modal = document.querySelector('.main-modal');
+    const closeButton = document.querySelectorAll('.modal-close');
+
+    const modalClose = () => {
+        modal.classList.remove('fadeIn');
+        modal.classList.add('fadeOut');
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 500);
+    }
+
+    const openModal = () => {
+        modal.classList.remove('fadeOut');
+        modal.classList.add('fadeIn');
+        modal.style.display = 'flex';
+    }
+
+    for (let i = 0; i < closeButton.length; i++) {
+        const elements = closeButton[i];
+        elements.onclick = (e) => modalClose();
+        modal.style.display = 'none';
+        window.onclick = function (event) {
+            if (event.target == modal) modalClose();
+        }
+    }
+</script>
+
+<style>
+    .animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .animated.faster {
+        -webkit-animation-duration: 500ms;
+        animation-duration: 500ms;
+    }
+
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+
+    .fadeOut {
+        -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+
+
 
 
 <!-- mehaa panel test
