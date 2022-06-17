@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/main.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
     <title>About Us</title>
 </head>
 <body>
+
+<!-- scroll bar -->
+<div class="scroll-progress bg-sky-500 w-0 h-1" id="scroll-progress">
+</div>
+<script>
+    const scrollProgressElement = document.querySelector("#scroll-progress");
+    
+    function scrollProgress() {
+        const totalheightOfWebPage = document.body.scrollHeight;
+        const currentDistanceFromTop = document.documentElement.scrollTop;
+
+        const windowHeight = document.documentElement.clientHeight;
+
+        const scrolledPercentage = 
+        (currentDistanceFromTop / (totalheightOfWebPage - windowHeight)) * 100;
+
+        // console.log(Math.round(scrolledPercentage));
+
+    scrollProgressElement.style.width = Math.round(scrolledPercentage) + "%";
+}
+
+document.addEventListener("scroll", scrollProgress);
+
+</script>
 
       <!--navbar-->
       <nav class="relative container mx-auto p-2">
@@ -46,13 +71,18 @@
                  </div>
              </div>
     </nav>
+<!-- progress bar -->
+ 
+
+
+<!-- text -->
 <div class="max-w-6xl px-5 mx-auto text-center">
     <!-- heading -->
     <h2 class="text-4xl font-bold text-center text-sky-700 my-6">
         THE PEOPLE BEHIND THE PROJECT
     </h2>
     <p class="text-center text-gray-600 mb-14">
-        We are 9 passionate students who want to make a difference wihtin the MSP community. This website <br> was created in the context of a research project. It was designed and created by MSP students for their MSPeers.
+        We are 9 passionate students who want to make a difference within the MSP community. This website <br> was created in the context of a research project. It was designed and created by MSP students for their MSPeers.
     </p>
 <!-- row 1 -->
     <div class="container flex my-10 mx-auto">
@@ -82,7 +112,7 @@
                 <h5 class="text-lg font-bold">Akiya Hoken</h5>
                 <a href="https://www.ikea.com/se/sv/p/huvudroll-kycklingkoettbullar-fryst-90486455/" class="text-sm font-bold text-gray-500"> Akiya.com </a>
                 <p class="text-sm text-gray-500">
-                Another of our student leaders of this project, he focused on ...  at MSP. Akiya worked on the design of our website.
+                Another of our student leaders of this project, he focused on Maths and Neuroscience at MSP. Akiya worked on the design of our website.
                 </p> 
             </div>
         </div>
@@ -107,7 +137,7 @@
                  The one struggling with button sizing   
                 </p>
                 <p class="text-sm text-gray-500">
-               She focuses on Maths and small Biology at MSP. Mehaa worked on the design of our website.
+               She focuses on Maths and Biology at MSP. Mehaa worked on the design of our website.
                 </p> 
             </div>
             <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-sky-100 w-80">
@@ -129,7 +159,8 @@
                 <img src="img/kelly's-cat.jpeg" class="h-40 -mt-14" alt=""/>
                 
                 <audio id="sound1" src="/mp3/Funkytown.mp3" preload="auto"></audio>
-                <button class="text-lg font-bold" onclick="document.getElementById('sound1').play();"> Kelly Wolters</button>                
+                <button class="text-lg font-bold" onclick="document.getElementById('sound1').play();"> Kelly Wolters</button>
+                
 
                 <p class="text-sm font-bold text-gray-500">
                 < div> The one and only < /div>
@@ -155,12 +186,13 @@
                    The one who would like some fries
                 </p>
                 <p class="text-sm text-gray-500">
-               She focuses on Neuroscoence and Maths at MSP.Elizaveta worked on the logic and functionality behind our website.
+               She focuses on Neuroscoence and Maths at MSP. Elizaveta worked on the logic and functionality behind our website.
                 </p> 
             </div>
         </div>
     </div>
 </div>
+
 
     <!-- Footer -->
     <footer id="footer" class="bg-gray-200">

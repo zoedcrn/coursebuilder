@@ -31,3 +31,16 @@
     margin: 20px 0;
     line-height: 25px;
 }
+
+
+/* scroll bar */
+
+body {
+    width: 100%;
+}
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
