@@ -11,8 +11,6 @@
 
 <body>
     <!-- Nav bar (anton's)-->
-
-    <!--navbar-->
         <nav class="relative container mx-auto p-2">
             <div class="flex items-center justify-between font-semibold">
                <!--logo-->
@@ -51,32 +49,32 @@
                  </div>
         </nav>
 
+   
+    
     <!-- NEW POPUP TRY -->
-
-    <div class="popup bg-gray-100 drop-shadow-2xl">
-        <button id="close">&times;</button>
-        <h1 class="font-bold text-2xl text-red-600 ">WARNING!</h1>
-        <p class="text-center text-sky-700 font-bold text-1xl">
-             KEEP IN MIND THE PRE- AND CO-REQUISITES!!!
-        </p>
-    </div>
-    <!--Script-->
-    <script>
-        window.addEventListener("load", function(){
-            setTimeout(
-                function open(event){
-                    document.querySelector(".popup").style.display = "block";
-                },
-                1000
-            )
-        });
-        document.querySelector("#close").addEventListener("click", function(){
-            document.querySelector(".popup").style.display = "none";
-        });
-    </script>
-
-
+        <div class="popup bg-gray-100 drop-shadow-2xl">
+            <button id="close">&times;</button>
+            <h1 class="font-bold text-2xl text-red-600 ">WARNING!</h1>
+            <p class="text-center text-sky-700 font-bold text-1xl">
+                KEEP IN MIND THE PRE- AND CO-REQUISITES!!!
+            </p>
+        </div>
+        <!--Script-->
+        <script>
+            window.addEventListener("load", function(){
+                setTimeout(
+                    function open(event){
+                        document.querySelector(".popup").style.display = "block";
+                    },
+                    1000
+                )
+            });
+            document.querySelector("#close").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "none";
+            });
+        </script>
     <!-- END OF POPUP TRY -->
+
        
     <!-- Semester blocks -->
     <section id="semester overview">
@@ -403,22 +401,22 @@
     </section>
 
 
-<!-- help button modal-->
+    <!-- help button modal-->
 <div>
     <button onclick="openModal()" class="bg-sky-700 text-white hover:bg-sky-500 font-bold uppercase text-sm px-3 py-3 rounded-full shadow hover:shadow-lg outline- focus:outline-none mr-1 mb-1 ease-linear
     transition-all duration-150 flex justify-end fixed bottom-10 right-10">?</button>
 </div>
 
-<div class="main-modal fixed w-full h-300 inset-0 z-50 overflow-hidden flex justify-center items-center animated fadeIn faster"
+<div class="main-modal fixed w-full h-full inset-0 z-50 overflow-hidden flex justify-center items-center animated fadeIn faster"
     style="background: rgba(0,0,0,.7);">
 
     <div
-        class="border border-gray-500 modal-container bg-white max-w-full h-max mx-auto rounded shadow-lg z-50 overflow-y-auto">        
-        <div class="relative p-4 w-full max-w-7xl h-full md:h-auto">
+        class="border border-gray-500 modal-container bg-white w-6/12 h-5/6 max-h-full mx-auto rounded shadow-lg z-50 overflow-y-auto">        
+        <div class=" p-4 w-full max-w-7xl max-h-full md:h-auto">
 
             <!--Title-->
-            <div class="flex justify-between items-center pb-3  p-5 border-b border-solid border-slate-200 rounded-t">
-                <p class="text-2xl font-bold text-sky-700 ">How to use?</p>
+            <div class="flex justify-between items-center pb-3 p-2 border-b border-slate-200 rounded-t">
+                <p class="text-4xl font-bold text-sky-700 font-serif ">How to use the course builder</p>
                 <div class="modal-close cursor-pointer z-50">
                     <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                         viewbox="0 0 18 18">
@@ -430,47 +428,58 @@
             </div>
 
             <!--Body-->
-            <div class="max-h-80 max-w-max overflow-y-scroll p-4">
-                <img src= "img/img-1.png" class= "max-w-full h-auto" alt="..." />
+            <div class="max-h-5/6 max-w-max overflow-y-scroll p-4">
+                <div class="my-4 text-gray-800 text-lg">
+                <img src= "img/img-1.png" class= "max-w-full h-auto border-2 border-sky-500" alt="..." />
+                <p> 1) First click on the semester that you would like to select courses for.</p>
+                <p class="text-white " >-----</p>
 
-                <div class="my-4 text-slate-500 text-lg leading-relaxed">
-                <p>First select the semester and period that you would like to select courses for. </p>
-                <p> </p>
-              
+                <img src= "img/img-1.png" class= "max-w-full h-auto border-2 border-sky-500" alt="..." />
+                <p> 2) Next select the period.</p>
+                <p class="text-white " >-----</p>
 
-                <img src= "img/img-1.png" class= "max-w-full h-auto" alt="..." />
+                <img src= "img/img-1.png" class= "max-w-full h-auto border-2 border-sky-500" alt="..." />
+                <p>3) You will now be able to see all courses you can take in this period.</p>
+                <p class="text-white " >-----</p>
 
-                <p>Next, in the course overview area you will be able to see all the course options for that period.</p>
-                <p>----</p>
-                <p>----</p>
-                <p>----</p>
-                <p>----</p>
-                <p>----</p>
-                <p>----</p>
-                <p>----</p>
-                <p>----</p>
+                <img src= "img/img-1.png" class= "max-w-full h-auto border-2 border-sky-500" alt="..." />
+                <p>4) From the course selection, cick on a course or practical that you would like to take. </p>
+                <p class="text-white " >-----</p>
 
-                <img src= "img/img-1.png" class= "max-w-full h-auto" alt="..." />
+                <img src= "img/img-1.png" class= "max-w-full h-auto border-2 border-sky-500" alt="..." />
+                <p>5) Click on the i next to the course or practical to get a short overview. The 'read more' button will direct you to the wiki page for more information. </p>
+                <p class="text-white " >-----</p>
 
+                <img src= "img/img-1.png" class= "max-w-full h-auto border-2 border-sky-500" alt="..." />
+                <p>6) After you have selected a module, the remaining options of courses and practical will be displayed. </p>
+                <p class="text-white " >-----</p>
 
+                <img src= "img/img-1.png" class= "max-w-full h-auto border-2 border-sky-500" alt="..." />
+                <p>7) Continue by completeing your selection of another course and one practical. </p>
+                <p class="text-white " >-----</p>
 
+                <img src= "img/img-1.png" class= "max-w-full h-auto border-2 border-sky-500" alt="..." />
+                <p>8) The courses that you have selected will now be visible at the top of the page under the period and semester that you intially clicked on. </p>
+                <p class="text-white " >-----</p>
+
+                <img src= "img/img-1.png" class= "max-w-full h-auto border-2 border-sky-500" alt="..." />
+                <p>9) You can also switch between periods and semesters by clicking on the ... </p>
+                <p class="text-white " >-----</p>
+
+                <img src= "img/img-1.png" class= "max-w-full h-auto border-2 border-sky-500" alt="..." />
+                <p>10)  </p>
+                <p class="text-white " >-----</p>
               </div>
               </div>
-              
-            <!--Footer-->
-            <div class="flex items-center justify-end p-3 border-t border-solid border-slate-200 rounded-b">
-            <div class="flex justify-end pt-2">
-                <button
-                    class="focus:outline-none modal-close px-3 bg-sky-700 p-3 ml-3 rounded-lg text-white hover:bg-sky-500">Close</button>
-            </div>
         </div>
         </div>
-    </div>
 </div>
+
 
 <script>
     const modal = document.querySelector('.main-modal');
     const closeButton = document.querySelectorAll('.modal-close');
+    console.log(closeButton)
 
     const modalClose = () => {
         modal.classList.remove('fadeIn');
@@ -539,6 +548,8 @@
         }
     }
 </style>
+
+
 
 
 
