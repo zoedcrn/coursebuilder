@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css"> 
     <title> Course Builder</title>
 </head>
 
@@ -50,13 +51,32 @@
                  </div>
         </nav>
 
-    <!--POP UP THAT WORKS -->
+    <!-- NEW POPUP TRY -->
+
+    <div class="popup bg-gray-100 drop-shadow-2xl">
+        <button id="close">&times;</button>
+        <h1 class="font-bold text-2xl text-red-600 ">WARNING!</h1>
+        <p class="text-center text-sky-700 font-bold text-1xl">
+             KEEP IN MIND THE PRE- AND CO-REQUISITES!!!
+        </p>
+    </div>
+    <!--Script-->
     <script>
-        function alertUser(msg) {
-        alert(msg);
-        }
-     </script>
-    <body onload="alertUser('DO NOT FORGET ABOUT PRE- AND CO-REQUISITES!!!')">
+        window.addEventListener("load", function(){
+            setTimeout(
+                function open(event){
+                    document.querySelector(".popup").style.display = "block";
+                },
+                1000
+            )
+        });
+        document.querySelector("#close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none";
+        });
+    </script>
+
+
+    <!-- END OF POPUP TRY -->
        
     <!-- Semester blocks -->
     <section id="semester overview">
