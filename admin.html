@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css"> 
+    <title> Admin page </title>
+</head>
+
+<body>
+ <!-- Nav bar (anton's)-->
+    <nav class="relative container mx-auto p-2">
+            <div class="flex items-center justify-between font-semibold">
+               <!--logo-->
+               <div class="pt-2">
+                <img src="#" alt="" class=""/>
+               </div>
+               <!--Menu items-->
+                <div class="hidden lg:flex lg:space-x-10 xl:space-x-20 ">
+                    <a href="#" class="hover:text-blue-300 text-sm ">Home</a>
+                    <a href="builder.html" class="hover:text-blue-300 text-sm ">Curriculum Planner</a> 
+                    <a href="#" class="hover:text-blue-300 text-sm ">Course Wiki</a>
+                    <a href="#" class="hover:text-blue-300 text-sm ">About Us</a>
+                    <a href="#" class="hover:text-blue-300 text-sm ">Log in</a>  
+                </div>
+                <!--Button--> 
+                <a href="#"
+             class="flex md:block p-3 px-6 pt-2 text-white bg-blue-900 rounded-full baseline hover:bg-blue-300 d"
+             >Get started</a
+             >
+                <!--Hamburger Icon-->
+                <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+                
+                <div class="lg:hidden">
+                    <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                        <a href="#" >Home</a>
+                        <a href="#" >Curriculum Planner</a> 
+                        <a href="#" >Course Wiki</a>
+                        <a href="#" >About Us</a>
+                        <a href="#" >Log in</a> 
+                     </div>
+                 </div>
+    </nav>
+
+<!-- box -->
+    <!-- title box -->
+    <label for="title" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Course Title</label>
+    <input type="text" placeholder="Course Title" id="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+    
+    <!-- subject -->
+    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Subject</label>
+    <input type="text" placeholder="Subject" id="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- code -->
+    <label for="code" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Code</label>
+    <input type="text" placeholder="Code" id="code" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- course coordinator -->
+    <label for="course_coordinator" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Course Coordinator</label>
+    <input type="text" placeholder="Course Coordinator" id="course_coordinator" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- contact -->
+    <label for="fcontact" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Contact</label>
+    <input type="text" placeholder="Contact" id="contact" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- pre-requisites -->
+    <label for="pre_requisites" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Pre-requisites</label>
+    <input type="text" placeholder="Pre-requisites" id="pre_requisites" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- co-requisites -->
+    <label for="co_requisites" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Co-requisites</label>
+    <input type="text" placeholder="Co-requisites" id="co_requisites" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- recommended -->
+    <label for="recommended" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Recommended</label>
+    <input type="text" placeholder="Recommended" id="recommended" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- objectives -->
+    <label for="objectives" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Objectives</label>
+    <input type="text" placeholder="Objectives" id="objectives" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- course description -->
+    <label for="description" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Course Description</label>
+    <input type="text" placeholder="Description" id="description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- literature -->
+    <label for="literature" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Literature</label>
+    <input type="text" placeholder="Literature" id="literature" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- Format -->
+    <label for="format" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Format</label>
+    <input type="text" placeholder="Format" id="format" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- Assessment -->
+    <label for="assessment" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Assessment</label>
+    <input type="text" placeholder="Assessment" id="assessment" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- Periods -->
+    <label for="period" class="block mb-2 text-sm font-medium text-gray-900 mx-12">Period(s)</label>
+    <input type="text" placeholder="Period" id="period" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- Day 1 -->
+        <!-- start time d1 -->
+        <label for="start_time_d1" class="block mb-2 text-sm font-medium text-gray-900 mx-12"> Start Day 1</label>
+        <input type="time" id="start_time_d1" placeholder="08:30" min="08:00" max="18:00" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+        <!-- end time d1 -->
+        <label for="end_time_d1" class="block mb-2 text-sm font-medium text-gray-900 mx-12"> End Day 1</label>
+        <input type="time" id="end_time_d1" placeholder="08:30" min="08:00" max="18:00" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+    <!-- Day 2 -->
+        <!-- start time d2 -->
+        <label for="start_time_d2" class="block mb-2 text-sm font-medium text-gray-900 mx-12"> Start Day 2</label>
+        <input type="time" id="start_time_d2" placeholder="08:30" min="08:00" max="18:00" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+        <!-- end time d2 -->
+        <label for="end_time_d2" class="block mb-2 text-sm font-medium text-gray-900 mx-12"> End Day 2</label>
+        <input type="time" id="end_time_d2" placeholder="08:30" min="08:00" max="18:00" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+   
+    <!-- Day 3 -->
+        <!-- start time d3 -->
+        <label for="start_time_d3" class="block mb-2 text-sm font-medium text-gray-900 mx-12"> Start Day 3</label>
+        <input type="time" id="start_time_d3" placeholder="08:30" min="08:00" max="18:00" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+        <!-- end time d3 -->
+        <label for="end_time_d3" class="block mb-2 text-sm font-medium text-gray-900 mx-12"> End Day 3</label>
+        <input type="time" id="end_time_d3" placeholder="08:30" min="08:00" max="18:00" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-12" required>
+
+
+    <button type="button" onclick="getInputValue()" class="mt-24 p-3 items-center mx-auto text-white bg-blue-900 rounded-full baseline hover:bg-blue-300">Save</button>
+    
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            
+            var title = document.getElementById("title").value;
+            var subject = document.getElementById("subject").value;
+            var code = document.getElementById("code").value;
+            var course_coordinator = document.getElementById("course_coordinator").value;
+            var contact = document.getElementById("contact").value;
+            var pre_requisites = document.getElementById("pre_requisites").value;
+            var co_requisites = document.getElementById("co_requisites").value;
+            var recommended = document.getElementById("recommended").value;
+            var objectives = document.getElementById("objectives").value;
+            var description = document.getElementById("description").value;
+            var literature = document.getElementById("literature").value;
+            var format = document.getElementById("format").value;
+            var assessment = document.getElementById("assessment").value;
+            var period = document.getElementById("period").value;
+            var start_time_d1 = document.getElementById("start_time_d1").value;
+            var end_time_d1 = document.getElementById("end_time_d1").value;
+            var start_time_d2 = document.getElementById("start_time_d2").value;
+            var end_time_d2 = document.getElementById("end_time_d2").value;
+            var start_time_d3 = document.getElementById("start_time_d3").value;
+            var end_time_d3 = document.getElementById("end_time_d3").value;
+           
+            
+          
+            console.log(title);
+            console.log(subject);
+            console.log(code);
+            console.log(course_coordinator);
+            console.log(contact);
+            console.log(pre_requisites);
+            console.log(co_requisites);
+            console.log(recommended);
+            console.log(objectives);
+            console.log(description);
+            console.log(literature);
+            console.log(format);
+            console.log(assessment);
+            console.log(period);
+            console.log(start_time_d1);
+            console.log(end_time_d1);
+            console.log(start_time_d2);
+            console.log(end_time_d2);
+            console.log(start_time_d3);
+            console.log(end_time_d3);
+
+        }
+    </script>
+
+
+
+ <!-- Footer -->
+    <footer class="bg-sky-600 mt-4" >
+        <div class="container flex justify-evenly mx-auto pt-4">
+            <!-- logo + description -->
+            <div class="flex flex-col items-left justify-evenly space-y-0 mx-4">
+                <div>
+                    <img src="img/msp-logo.jpeg" class="h-20" alt="">
+                </div>
+            </div>
+            <!-- description -->
+            <div class="flex justify-around mx-4">
+                <div class="text-white text-sm py-3">
+                    <p> This website was built and designed by MSP students for </p>
+                    <p> MSP students in the context of a research project. </p>
+                    <p class="italic"> The one and only, MSPCourseBuilder team </p> 🙂
+                </div>
+            </div>
+            <!-- links col 1 -->
+            <div class="flex justify-around mx-4">
+                <div class="flex flex-col space-y-2 text-white">
+                    <a href="#" class="hover:text-sky-800">Home</a>
+                    <a href="#" class="hover:text-sky-800">Course Builder</a>
+                    <a href="#" class="hover:text-sky-800">Wiki</a>
+                </div>
+            </div>
+            <!-- links col 2 -->
+            <div class="flex justify-around mx-4">
+                <div class="flex flex-col space-y-2 text-white">
+                    <a href="#" class="hover:text-sky-800">About Us</a>
+                    <a href="#" class="hover:text-sky-800">How to Get Started</a>
+                    <a href="#" class="hover:text-sky-800">FAQ</a>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto text-center text-white pb-2">
+            <!-- copyright -->
+            Copyright &copy; 2022. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
